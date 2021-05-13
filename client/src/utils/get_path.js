@@ -3,7 +3,7 @@
  * @returns {string}
  */
 function getImagePath(imageId) {
-  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_2000,q_auto,w_2000/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/${imageId}.jpg`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_1080,q_auto:eco,w_1080/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/${imageId}.jpg`;
 }
 
 /**
@@ -11,7 +11,7 @@ function getImagePath(imageId) {
  * @returns {string}
  */
 function getMoviePath(movieId) {
-  return `https://res.cloudinary.com/dtwiszeub/image/fetch/q_auto/https://vivid344-webspeedhackathon2021.herokuapp.com/movies/${movieId}.gif`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_512,q_auto:low/https://vivid344-webspeedhackathon2021.herokuapp.com/movies/${movieId}.gif`;
 }
 
 /**
@@ -27,7 +27,7 @@ function getSoundPath(soundId) {
  * @returns {string}
  */
 function getProfileImagePath(profileImageId) {
-  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_2000,q_auto,w_2000/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/profiles/${profileImageId}.jpg`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_100,q_auto:eco,w_100/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/profiles/${profileImageId}.jpg`;
 }
 
 export { getImagePath, getMoviePath, getSoundPath, getProfileImagePath };
