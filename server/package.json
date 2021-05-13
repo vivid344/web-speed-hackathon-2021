@@ -50,6 +50,9 @@
     "@types/sqlite3": "3.1.7",
     "@types/uuid": "^8.3.0"
   },
+  "optionalDependencies": {
+    "node-zopfli-es": "~1.0.3"
+  },
   "engines": {
     "node": "14.x.x"
   },
