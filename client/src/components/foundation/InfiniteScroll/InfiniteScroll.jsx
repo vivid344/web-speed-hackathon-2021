@@ -25,14 +25,8 @@ const InfiniteScroll = ({ children, fetchMore }) => {
       prevReachedRef.current = hasReached;
     };
 
-    document.addEventListener('wheel', handler, { passive: false });
-    document.addEventListener('touchmove', handler, { passive: false });
-    document.addEventListener('resize', handler, { passive: false });
     document.addEventListener('scroll', handler, { passive: false });
     return () => {
-      document.removeEventListener('wheel', handler);
-      document.removeEventListener('touchmove', handler);
-      document.removeEventListener('resize', handler);
       document.removeEventListener('scroll', handler);
     };
   }, [fetchMore]);
