@@ -3,7 +3,7 @@
  * @returns {string}
  */
 function getImagePath(imageId) {
-  return `/images/${imageId}.jpg`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_2000,q_auto,w_2000/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/${imageId}.jpg`;
 }
 
 /**
@@ -11,7 +11,7 @@ function getImagePath(imageId) {
  * @returns {string}
  */
 function getMoviePath(movieId) {
-  return `/movies/${movieId}.gif`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/q_auto/https://vivid344-webspeedhackathon2021.herokuapp.com/movies/${movieId}.gif`;
 }
 
 /**
@@ -27,7 +27,7 @@ function getSoundPath(soundId) {
  * @returns {string}
  */
 function getProfileImagePath(profileImageId) {
-  return `/images/profiles/${profileImageId}.jpg`;
+  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_2000,q_auto,w_2000/f_webp/https://vivid344-webspeedhackathon2021.herokuapp.com/images/profiles/${profileImageId}.jpg`;
 }
 
 export { getImagePath, getMoviePath, getSoundPath, getProfileImagePath };
