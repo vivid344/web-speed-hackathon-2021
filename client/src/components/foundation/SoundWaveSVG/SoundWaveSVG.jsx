@@ -2,6 +2,7 @@ import map from 'lodash/map';
 import chunk from 'lodash/chunk';
 import mean from 'lodash/mean';
 import zip from 'lodash/zip';
+import calcMax from 'lodash/max';
 import React from 'react';
 
 /**
@@ -31,14 +32,14 @@ const SoundWaveSVG = ({ soundData }) => {
 
     // 左右の音声データの平均を取る
     const normalized = map(zip(leftData, rightData), mean);
+
     // 100 個の chunk に分ける
     const chunks = chunk(normalized, Math.ceil(normalized.length / 100));
     // chunk ごとに平均を取る
     const peaks = map(chunks, mean);
     // chunk の平均の中から最大値を取る
-    const max = max(peaks);
-
-    setPeaks({ max, peaks });
+    const max = calcMax(peaks);
+    setPeaks({max: max, peaks: peaks});
   }, [soundData]);
 
   return (
