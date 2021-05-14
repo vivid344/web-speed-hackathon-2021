@@ -11,7 +11,7 @@ function getImagePath(imageId) {
  * @returns {string}
  */
 function getMoviePath(movieId) {
-  return `https://res.cloudinary.com/dtwiszeub/image/fetch/c_fit,h_512,q_auto:low/https://vivid344-webspeedhackathon2021.herokuapp.com/movies/${movieId}.gif`;
+  return `/movies/${movieId}.gif`;
 }
 
 /**
